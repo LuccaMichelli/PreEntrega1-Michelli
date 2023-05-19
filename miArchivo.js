@@ -6,6 +6,7 @@ const comprarProductos = () => {
     let totalCompra = 0;
     let seguirComprando = false;
 
+
     do {
         producto = prompt ("¿Querés comprar shampoo, acondicionador o ambos?", "Ej: ambos");
         cantidad = parseInt(prompt ("¿Cuántos querés comprar?"));
@@ -38,6 +39,8 @@ const comprarProductos = () => {
 
     return totalConEnvio;
 }
+
+
 
 const validarCantidad = (cantidad) => {
     while (Number.isNaN(cantidad) || cantidad === 0) {
@@ -104,7 +107,7 @@ function calcularIntereses (cuotas) {
     let tasa = 12.3;
     let sinIntereses = 0;
     let tasaTotal = 0;
-    let interesesTotales = 0;
+    let interesesTotales = 0;""
 
     if (cuotas === 1){
         return sinIntereses;
